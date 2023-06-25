@@ -9,8 +9,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="/admin/libs/DataTables/datatables.min.css" />
-    <link rel="stylesheet" href="/admin/resources/css/user.css">
+    <link rel="stylesheet" type="text/css" href="/<?= FOLDER_ADMIN ?>/libs/DataTables/datatables.min.css" />
+    <link rel="stylesheet" href="/<?= FOLDER_ADMIN ?>/resources/css/user.css">
 
 </head>
 
@@ -36,16 +36,16 @@
     ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="/admin/libs/jquery-3.6.3/jquery-3.6.3.min.js"></script>
-    <script src="/admin/libs/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
-    <script src="/admin/libs/jquery-validation-1.19.5/src/additional/accept.js"></script>
-    <script src="/admin/libs/jquery-validation-1.19.5/src/additional/maxsize.js"></script>
-    <script src="/admin/libs/jquery-validation-1.19.5/src/additional/time.js"></script>
-    <script src="/admin/libs/DataTables/datatables.min.js"></script>
-    <script src="/admin/libs/ckeditor/ckeditor.js"></script>
-    <script src="/admin/libs/ckfinder/ckfinder.js"></script>
-    <script src="/admin/resources/js/validate.js"></script>
-    <script src="/admin/resources/js/user.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/libs/jquery-3.6.3/jquery-3.6.3.min.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/libs/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/libs/jquery-validation-1.19.5/src/additional/accept.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/libs/jquery-validation-1.19.5/src/additional/maxsize.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/libs/jquery-validation-1.19.5/src/additional/time.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/libs/DataTables/datatables.min.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/libs/ckeditor/ckeditor.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/libs/ckfinder/ckfinder.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/resources/js/validate.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/resources/js/user.js"></script>
     <script>
         $(document).ready(function() {
             $('#data-table').DataTable();

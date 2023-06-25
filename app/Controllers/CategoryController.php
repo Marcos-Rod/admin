@@ -36,7 +36,7 @@ class CategoryController extends Controller
         $data = $_POST;
 
         if($model->where('slug', $data['slug'])->get()){
-            return $this->redirect("/admin/category?status=duplicated");
+            return $this->redirect("/" . FOLDER_ADMIN . "/category?status=duplicated");
         }
         
         $data['create_at'] = Functions::hoy();
@@ -44,7 +44,7 @@ class CategoryController extends Controller
 
         $model->create($data);
 
-        return $this->redirect('/admin/category');
+        return $this->redirect('/' . FOLDER_ADMIN . '/category');
     }
 
     public function edit($slug)
@@ -79,7 +79,7 @@ class CategoryController extends Controller
         $match = $model->where('slug', $data['slug'])->where('id', '!=', Functions::decrypt($data['cid'], 'category'))->get();
 
         if(!empty($match)){
-            return $this->redirect("/admin/category?status=duplicated");
+            return $this->redirect("/" . FOLDER_ADMIN . "/category?status=duplicated");
         }
         
         $data['update_at'] = Functions::hoy();
@@ -89,7 +89,7 @@ class CategoryController extends Controller
 
         $model->update(Functions::decrypt($_POST['cid'], 'category'), $data);
 
-        return $this->redirect('/admin/category');
+        return $this->redirect('/' . FOLDER_ADMIN . '/category');
     }
 
     public function destroy($slug)
@@ -97,6 +97,6 @@ class CategoryController extends Controller
         $model = new Category;
         $model->delete($slug, 'slug');
 
-        return $this->redirect('/admin/category');
+        return $this->redirect('/' . FOLDER_ADMIN . '/category');
     }
 }

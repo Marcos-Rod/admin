@@ -3,6 +3,7 @@
 //URLs
 define("URL_SERVIDOR", dirname(__FILE__) . '/');
 define("URL_FILES", dirname("../" . __FILE__));
+define("FOLDER_ADMIN", "admin");
 
 //DB
 define('DB_HOST', 'localhost');

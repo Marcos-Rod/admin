@@ -28,10 +28,10 @@
                                 <td><a href="/post/<?= $category['slug'] ?>" target="_blank" rel="noopener noreferrer"><?= $category['slug'] ?></a></td>
                                 <td class="text-center">
                                     <div class="d-flex gap-4 justify-content-center">
-                                        <a href="<?= '/admin/category/' . $category['slug'] . '/edit'; ?>" class="btn btn-warning btn-sm">
+                                        <a href="/<?= FOLDER_ADMIN . '/category/' . $category['slug'] . '/edit'; ?>" class="btn btn-warning btn-sm">
                                             Editar
                                         </a>
-                                        <form action="/admin/category/<?= $category['slug'] ?>/delete/" method="post">
+                                        <form action="/<?= FOLDER_ADMIN ?>/category/<?= $category['slug'] ?>/delete/" method="post">
                                             <button type="submit" class="btn btn-danger btn-sm del-button">Eliminar</button>
                                         </form>
                                     </div>
@@ -45,7 +45,7 @@
         <div class="col-lg-5">
             <h4>Crear nueva categor&iacute;a</h4>
 
-            <form action="/admin/category/<?= (!isset($categoryEdit)) ? 'store' : 'update' ?>" method="post" id="frm-tags">
+            <form action="/<?= FOLDER_ADMIN ?>/category/<?= (!isset($categoryEdit)) ? 'store' : 'update' ?>" method="post" id="frm-tags">
                 <div class="mb-3">
                     <label for="name" class="fw-bold">Titulo de la etiqueta</label>
                     <span id="slug-span" class="d-none"></span>

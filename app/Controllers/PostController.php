@@ -66,7 +66,7 @@ class PostController extends Controller
             $model->images('posts/' . $file, $post['id']);
         }
 
-        return $this->redirect("/admin/post/{$post['slug']}/edit");
+        return $this->redirect("/" . FOLDER_ADMIN . "/post/{$post['slug']}/edit");
     }
 
     public function edit($slug)
@@ -126,13 +126,13 @@ class PostController extends Controller
             }
         }
 
-        return $this->redirect("/admin/post/{$data['slug']}/edit");
+        return $this->redirect("/" . FOLDER_ADMIN . "/post/{$data['slug']}/edit");
     }
 
     public function delete($slug){
         $model = new Post;
 
         $model->delete($slug, 'slug');
-        return $this->redirect('/admin/post');
+        return $this->redirect('/' . FOLDER_ADMIN . '/post');
     }
 }

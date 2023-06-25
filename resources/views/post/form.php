@@ -4,7 +4,7 @@
             <div class="col-lg-5 text-center">
                 <label for="img_destacada" class="text-start w-100 fw-bold">Imagen destacada</label>
                 <div class="img-destacada my-4 mx-auto">
-                    <img src="<?=(isset($post['image'])) ? '/userfiles/images/' . $post['image']['url'] : '/admin/resources/image/default-1200-x-800.jpg'?>" alt="Destacada" id="picture">
+                    <img src="<?=(isset($post['image'])) ? '/userfiles/images/' . $post['image']['url'] : '/' . FOLDER_ADMIN . '/resources/image/default-1200-x-800.jpg'?>" alt="Destacada" id="picture">
                 </div>
                 <input type="file" name="file" id="file" class="form-control-file" />
             </div>

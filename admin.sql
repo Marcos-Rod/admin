@@ -67,7 +67,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
  
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `create_at`, `update_at`) VALUES
-(1, 'Marcos', 'admin@mail.mx', '$2y$10$fIvtdVEKxPrspxVuPzZJoOsoIybSlbha1z8hc3KV8nmik/DgxChDi', '2023-03-30 23:21:32', '2023-03-30 23:21:32');
+(1, 'Admin', 'admin@mail.mx', '$2y$10$w3RRQ0vWnqxd5ZA/bGQ/E.hI6SK5U5oO2ZTa20aQb3T5OUL7x.ik6', '2023-03-30 23:21:32', '2023-03-30 23:21:32');
 
  
 ALTER TABLE `categories`

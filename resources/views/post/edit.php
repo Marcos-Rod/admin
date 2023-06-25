@@ -3,7 +3,7 @@
         <h2>Editando Post</h2>
         <hr>
 
-        <form action="/admin/post/<?= $post['slug'] ?>/update" method="post" id="form-post" enctype="multipart/form-data">
+        <form action="/<?= FOLDER_ADMIN ?>/post/<?= $post['slug'] ?>/update" method="post" id="form-post" enctype="multipart/form-data">
             <? include_once(URL_SERVIDOR . 'resources/views/post/form.php') ?>
             <input type="hidden" name="pid" value="<?=$post['id']?>">
             <div class="text-end">

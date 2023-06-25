@@ -9,7 +9,6 @@ class AuthController extends Controller
 
     public static function isLoggedIn()
     {
-
         if (isset($_SESSION['aauth']) == 1 && intval($_SESSION["admin_id"]) > 0) {
             return true;
         } else {
@@ -41,7 +40,7 @@ class AuthController extends Controller
                 $_SESSION['admin_email'] = $user['email'];
                 $_SESSION['aauth'] = 1;
 
-                return $this->redirect('./dashboard');
+                return $this->redirect('/' . FOLDER_ADMIN . '/dashboard');
             }
         } else {
             $authMessages = [
@@ -62,6 +61,6 @@ class AuthController extends Controller
         if (session_status() == PHP_SESSION_ACTIVE)
             session_destroy();
 
-        return $this->redirect('./login');
+        return $this->redirect('/' . FOLDER_ADMIN . '/login');
     }
 }

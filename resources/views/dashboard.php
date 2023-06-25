@@ -4,14 +4,14 @@
 
         <div class="col-md-3 text-center">
             <div class="shadow p-4">
-                <p class="fs-1 text-secondary"><a href="/admin/post"><i class="bi bi-file-post"></i></a></p>
-                <h4><a href="/admin/post">Entradas</a></h4>
+                <p class="fs-1 text-secondary"><a href="./post"><i class="bi bi-file-post"></i></a></p>
+                <h4><a href="./post">Entradas</a></h4>
             </div>
         </div>
         <div class="col-md-3 text-center">
             <div class="shadow p-4">
-                <p class="fs-1 text-secondary"><a href="/admin/category"><i class="bi bi-tags-fill"></i></a></p>
-                <h4><a href="/admin/category">Categor&iacute;as</a></h4>
+                <p class="fs-1 text-secondary"><a href="./category"><i class="bi bi-tags-fill"></i></a></p>
+                <h4><a href="./category">Categor&iacute;as</a></h4>
             </div>
         </div>
     </div>

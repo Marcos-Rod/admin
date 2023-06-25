@@ -3,7 +3,7 @@
         <div class="flex">
             <h2 class="float-start">Notas de Blog</h2>
             <div class="float-end">
-                <a href="/admin/post/create" class="btn btn-primary">Crear nueva entrada</a>
+                <a href="./post/create" class="btn btn-primary">Crear nueva entrada</a>
             </div>
         </div>
         <hr>
@@ -28,10 +28,10 @@
                                 <td><a href="/post/<?= $post['slug']?>" target="_blank" rel="noopener noreferrer"><?= $post['slug']?></a></td>
                                 <td class="text-center">
                                     <div class="d-flex gap-4 justify-content-center">
-                                        <a href="<?= '/admin/post/'. $post['slug'] .'/edit'; ?>" class="btn btn-warning btn-sm">
+                                        <a href="<?= './post/'. $post['slug'] .'/edit'; ?>" class="btn btn-warning btn-sm">
                                             Editar
                                         </a>
-                                        <form action="/admin/post/<?= $post['slug'] ?>/delete/" method="post">
+                                        <form action="./post/<?= $post['slug'] ?>/delete/" method="post">
                                             <button type="submit" class="btn btn-danger btn-sm del-button">Eliminar</button>
                                         </form>
                                     </div>

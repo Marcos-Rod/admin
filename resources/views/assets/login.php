@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="/admin/resources/css/user.css">
+    <link rel="stylesheet" href="/<?= FOLDER_ADMIN ?>/resources/css/user.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <div class="row ">
                 <div class="login-form offset-md-3 col-md-6 offset-lg-4 col-lg-4 card py-5 px-4">
                     <p class="text-center mb-5"><img src="" alt="Administrador" class="img-fluid" width="100"></p>
-                    <form action="/admin/login" method="POST" id="login">
+                    <form action="/<?= FOLDER_ADMIN ?>/login" method="POST" id="login">
                         <div class="input-group mb-3">
                             <label for="mail">
                                 <i class="bi bi-envelope-fill fs-4 px-2"></i>
@@ -45,11 +45,11 @@
         </div>
     </div>
 
-    <script src="/admin/libs/jquery-3.6.3/jquery-3.6.3.min.js"></script>
-    <script src="/admin/libs/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/libs/jquery-3.6.3/jquery-3.6.3.min.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/libs/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="/admin/resources/js/validate.js"></script>
+    <script src="/<?= FOLDER_ADMIN ?>/resources/js/validate.js"></script>
 </body>
 
 </html>

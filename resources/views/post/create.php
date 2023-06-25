@@ -3,7 +3,7 @@
         <h2>Crear nuevo Post</h2>
         <hr class="mb-5">
 
-        <form action="/admin/post/store" method="post" id="form-post" enctype="multipart/form-data">
+        <form action="/<?= FOLDER_ADMIN ?>/post/store" method="post" id="form-post" enctype="multipart/form-data">
 
             <? include_once(URL_SERVIDOR . 'resources/views/post/form.php') ?>
 
